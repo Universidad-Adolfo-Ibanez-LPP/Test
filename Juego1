@@ -1,0 +1,9 @@
+void ask_option(int *UserOption){// 
+	system("clear");
+	printf("Bienvenido a Piedra, Papel o Tijera \n");
+	printf("Ingrese el numero de su opcion \n");
+	printf("1.Piedra \n2.Papel \n3.Tijera \n");
+	scanf ("%i", UserOption);
+	printf("Usted elegio la ópcion: %i \n",*UserOption);
+
+}
