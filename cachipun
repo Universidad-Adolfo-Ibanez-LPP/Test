@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h> 
+
 void ask_option(int *UserOption){// 
 	system("clear");
 	printf("Bienvenido a Piedra, Papel o Tijera \n");
@@ -5,5 +8,21 @@ void ask_option(int *UserOption){//
 	printf("1.Piedra \n2.Papel \n3.Tijera \n");
 	scanf ("%i", UserOption);
 	printf("Usted elegio la ópcion: %i \n",*UserOption);
+
+}
+void verificaGanador(int UserOption) {
+  int PcOption;
+	PcOption= (rand()%3)+1; // genera un numero aleatorio del 1 al 3
+	printf("La ópción de la máquina fue %i \n",PcOption);
+	
+	if(UserOption==PcOption) printf("\nEmpataste\n");
+   	if((UserOption==2)&&(PcOption==1)) printf("\nGanaste\n");
+ 	if((UserOption==1)&&(PcOption==2)) printf("\nPerdiste\n");
+	if((UserOption==3)&&(PcOption==1)) printf("\nPerdiste\n");
+	if((UserOption==3)&&(PcOption==2)) printf("\nGanaste\n");
+	if((UserOption==2)&&(PcOption==3)) printf("\nPerdiste\n");
+	if((UserOption==1)&&(PcOption==3)) printf("\nGanaste\n");
+  
+ 
 
 }
