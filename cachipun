@@ -42,14 +42,15 @@ void continuar_juego(int UserOption) {//para continuar jugando
 
 int main(void){
 	int UserOption;
-  ask_option(&UserOption); 
+  	ask_option(&UserOption); 
   
 while (UserOption!=4){
   	verificaGanador(UserOption);
-    continuar_juego(UserOption);
-    ask_option(&UserOption); 
+    	continuar_juego(UserOption);
+    	ask_option(&UserOption); 
   }
-  system("pause()");
-  ask_option(&UserOption); 
+  	system("pause()");
+  	ask_option(&UserOption); 
   
+  	return 0;
   }
